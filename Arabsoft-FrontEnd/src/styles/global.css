@@ -1,0 +1,29 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Navbar Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the navbar is above other content */
+  background-color: #fff !important; /* Adjust as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for depth */
+}
+
+/* Main Content Styles */
+main {
+  padding-top: 6rem; /* Adjust this value based on the height of the fixed navbar */
+}
+
+/* Footer Styles */
+footer {
+  padding: 1rem;
+  background-color: #f8f8f8; /* Adjust as needed */
+  text-align: center;
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap');
+
+.footer {
+  color: #FFFFFF; /* Contrasting text color */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Lexend', sans-serif;
+  width: 100%; /* Ensures the footer takes up the full width */
+  margin: 0 auto;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay color */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds shadow to the footer */
+  border-radius: 8px; /* Optional: Rounded corners */
+  background-image: url('src/components/util/—Pngtree—modern abstract memphis geometric shapes_3874551.png');
+  background-size: 60%;
+  background-repeat: repeat;
+  background-position: left;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between the logo and other items */
+}
+
+.footer-logo img {
+  width: auto; /* Ensures the Arabsoft logo is appropriately sized */
+  height: auto;
+  filter: invert(100%); /* Inverts the colors of the logo */
+}
+
+.footer-right {
+  flex-grow: 1;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer-contact p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a subtle shadow behind the text */
+  text-align: left;
+}
+
+.footer-contact a {
+  color: #FFD700; /* Gold color for contrast */
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow to make links pop */
+}
+
+.footer-copyright {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow behind the copyright text */
+}
+
+.footer-copyright p {
+  margin: 5px 0;
+  color: #FFFFFF; /* White text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow to enhance visibility */
+}

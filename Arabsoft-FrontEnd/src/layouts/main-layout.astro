@@ -1,0 +1,35 @@
+---
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
+import "../styles/Footer.css"; 
+import "../styles/global.css"
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-white shadow-lg h-24 hidden md:flex">
+    <Nav />
+  </header>
+  <main>
+    <slot />
+  </main>
+  <footer>
+    <Footer />
+  </footer>
+</body>
+<script src="src//scripts//navAnimation.js" defer></script>
+</html>
+
+

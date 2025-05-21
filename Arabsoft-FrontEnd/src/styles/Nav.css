@@ -1,0 +1,128 @@
+/* Desktop Navigation */
+@media only screen and (min-width: 64rem) {
+    #cs-navigation {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1rem 3vw;
+        color: #E0E0E0;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+        height: 100px;
+        background-color: #000;
+        filter: invert(100%);
+    }
+
+    #cs-navigation .cs-background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('src/components/util/—Pngtree—modern abstract memphis geometric shapes_3874551.png');
+        background-size: 60%;
+        background-repeat: repeat;
+        background-position: left;
+        z-index: -1;
+    }
+
+    #cs-navigation .cs-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+    }
+
+    #cs-navigation .cs-logo img {
+        height: 60px;
+        object-fit: contain;
+    }
+
+    #cs-navigation .cs-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        filter: invert(100%);
+    }
+
+    /* Blur Box Container */
+    #cs-navigation .cs-blur-box {
+        background: rgba(0, 0, 0, 0.7); /* Dark overlay color */
+        border-radius: 8px;
+        padding: 10px 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Box shadow */
+    }
+
+    #cs-navigation .cs-ul-wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    #cs-navigation .cs-ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        gap: 3vw;
+    }
+
+    #cs-navigation .cs-li {
+        margin: 0;
+        position: relative;
+    }
+
+    #cs-navigation .cs-li-link {
+        font-size: 1.25rem;
+        color: #FFFFFF; /* White text */
+        text-decoration: none;
+        position: relative;
+        padding-bottom: 0.5rem;
+        overflow: hidden;
+    
+        text-shadow: 
+            -1px -1px 0 #000,  
+            1px -1px 0 #000,  
+            -1px 1px 0 #000,  
+            1px 1px 0 #000,
+            2px 2px 4px rgba(0, 0, 0, 0.7); /* Combines stroke and shadow */
+    }
+
+    #cs-navigation .cs-li-link:before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: #FFFFFF;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: bottom left;
+        transition: transform 0.3s ease;
+    }
+
+    #cs-navigation .cs-li-link.cs-active:before {
+        transform: scaleX(1);
+    }
+
+    /* Specific Button Styles for Navbar */
+    #cs-navigation .navbar-button {
+        background-color: #000; /* Set the desired background color */
+        color: #FFF; /* Set the desired text color */
+        border: 1px solid #FFF; /* Optional: Add a border */
+        padding: 6px 12px; /* Adjust padding as needed */
+        border-radius: 4px; /* Match other buttons if necessary */
+        cursor: pointer;
+    }
+
+    #cs-navigation .navbar-button:hover {
+        background-color: #333; /* Optional: Darken on hover */
+    }
+}
